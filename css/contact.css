@@ -13,8 +13,8 @@ textarea {
 
 .contact-info {
   color: black;
-  text-transform: uppercase;
   text-align: left;
+  text-decoration: bold;
 }
 
 .contact {
@@ -28,6 +28,10 @@ textarea {
   grid-template-columns: 1fr auto;
   grid-gap: 50px;
   margin-top: 50px;
+}
+
+.contact__content a {
+  text-decoration: underline;
 }
 
 .form-wrapper {
