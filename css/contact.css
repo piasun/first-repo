@@ -11,16 +11,16 @@ textarea {
   height: 65%;
 }
 
-.contact-info {
-  color: black;
-  text-align: left;
-  text-decoration: bold;
-}
-
 .contact {
   max-width: 1000px;
   margin: 50px auto;
   text-align: center;
+}
+
+.contact-info {
+  color: black;
+  text-align: left;
+  font-weight: bold;
 }
 
 .contact__content {
