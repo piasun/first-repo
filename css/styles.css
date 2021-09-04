@@ -58,12 +58,68 @@ nav li {
   padding: 20px 30px;
 }
 
-#hamburger-menu {
+.menu-icon {
+  padding: 35px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+label {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+}
+
+label::before,
+label::after {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  display: block;
+  transition: all 0.6s var(--animation-curve);
+}
+
+label::before {
+  top: -150%;
+  left: 0%;
+  transform-origin: left top;
+  transform: rotateZ(0deg);
+}
+label::after {
+  bottom: -150%;
+  left: 0%;
+  transform-origin: left bottom;
+  transform: rotateZ(0deg);
+}
+
+#toogle:checked ~ ::before {
+  background-color: blueviolet;
+  transform: rotate(33deg);
+}
+
+#toogle:checked ~ ::after {
+  background-color: blueviolet;
+  transform: rotate(-33deg);
+}
+
+#toogle:checked ~ label {
+  background-color: white;
+}
+
+#toogle {
   display: none;
 }
 
-#hamburger-menu:checked ~ nav {
+#toogle:checked ~ nav {
   display: block;
+}
+
+#toogle ~ label {
+  transition: all 0, 5s var(--animation-curve);
 }
 
 .information {

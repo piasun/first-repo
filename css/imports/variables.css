@@ -1,5 +1,6 @@
 :root {
-    --text-paragraph: "Open Sans";
-    --text-header: "Domine";
-    --color-header-footer: #ffff;
+  --text-paragraph: "Open Sans";
+  --text-header: "Domine";
+  --color-header-footer: #ffff;
+  --animation-curve: cubic-bezier(1, 0, 0, 1);
 }
